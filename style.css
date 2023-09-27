@@ -1,0 +1,105 @@
+/* colors */
+:root {
+    --color-bluey: rgb(24, 119, 242);
+    --color-lbluey: rgb(32, 156, 234);
+    --color-fadebluey: rgba(32, 157, 234, 0.671);
+    --color-dark: rgb(18, 18, 18);
+
+}
+
+
+/* general style */
+* {
+    margin: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.logo-img {
+    width: 120px;
+    height: 120px;
+
+
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* header style */
+header {
+    padding: 50px 5%
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--color-bluey);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: var(--color-lbluey);
+    transform: scale(1.10);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contact button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--color-bluey);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contact button:hover {
+    box-shadow: 0px 0px 8px var(--color-fadebluey);
+}
+
+/* form page */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    color: var(--color-fadebluey);
+}
